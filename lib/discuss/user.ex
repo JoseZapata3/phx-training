@@ -7,6 +7,7 @@ defmodule Discuss.User do
     field :nickname, :string
     field :provider, :string
     field :token, :string
+    has_many :topics, Discuss.Topic
 
     timestamps()
   end
