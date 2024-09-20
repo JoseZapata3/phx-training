@@ -1,0 +1,7 @@
+<.form :let={f} for={@changeset} phx-submit="save_topic" action={~p"/topics"}>
+  <div class="form-group">
+    <.input field={f[:title]} class="form-controller" placeholder="Title" />
+  </div>
+
+  <input type="submit" value="Save Topic" class="btn btn-primary" />
+</.form>
